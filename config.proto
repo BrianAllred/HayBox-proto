@@ -142,6 +142,8 @@ enum GameModeId {
   MODE_CUSTOM = 7;
   // Built-in Rivals of Aether 2 mode.
   MODE_RIVALS_2 = 8;
+  // Built-in HewDraw Remix mode.
+  MODE_HDR = 9;
 }
 
 /**
@@ -504,6 +506,17 @@ message ProjectMOptions {
 }
 
 /**
+ * HewDraw Remix mode specific options.
+ */
+message HDROptions {
+  // Set to true to disable the horizontal SOCD modifier override intended to assist with
+  // ledgedashing.
+  bool disable_ledgedash_socd_override = 1;
+  // Custom airdodge X/Y coordinates. Valid X/Y values are 0 to 100.
+  Coords custom_airdodge = 2;
+}
+
+/**
  * The global container for all device configuration data.
  */
 message Config {
@@ -543,6 +556,8 @@ message Config {
   MeleeOptions melee_options = 9;
   // Project M mode specific options.
   ProjectMOptions project_m_options = 10;
+  // HewDraw Remix mode specific options.
+  HDROptions hdr_options = 11;
 }
 
 /**

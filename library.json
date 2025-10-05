@@ -3,16 +3,21 @@
   "name": "HayBox-proto",
   "description": "Protobuf definitions for HayBox configuration",
   "keywords": "HayBox, game controller, protocol buffers, protobuf",
-  "authors": {
-    "name": "Jonathan Haylett"
-  },
+  "authors": [
+    {
+      "name": "Jonathan Haylett"
+    },
+    {
+      "name": "Brian Allred"
+    }
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/JonnyHaystack/HayBox-proto.git"
+    "url": "https://github.com/BrianAllred/HayBox-proto.git"
   },
   "version": "0.0.0",
   "license": "GPL-3.0-only",
-  "homepage": "https://github.com/JonnyHaystack/HayBox-proto",
+  "homepage": "https://github.com/BrianAllred/HayBox-proto",
   "dependencies": {
     "Nanopb": "^0.4.8"
   },
